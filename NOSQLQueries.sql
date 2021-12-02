@@ -1,6 +1,6 @@
 -- THE FIRST FEW QUERIES ARE FOR PORTING DATA OVER TO NOSQL
 -- Query for all the students with their covid status, vaccination status and daily temperature
--- This is conversted to student.csv
+-- This is conversted to student.csv from relational database
 SELECT 
 s.Student_ID, s.Student_Name, s.Student_Email, s.Gender, s.Age,
 hs.Vaccinated,hs.CovidPositive,
@@ -13,7 +13,7 @@ AND sd.Student_ID = s.Student_ID
 AND sd.HealthDeclaration_ID = dhd.HealthDeclaration_ID;
 
 -- Query for all the professors with their covid status, vaccination status and daily temperature
--- This is converted to professor.csv
+-- This is converted to professor.csv from relational database
 SELECT p.Professor_ID, p.Professor_Name, p.Gender, p.Professor_Email, p.Department, p.Contact_Number,
 hs.Vaccinated, hs.CovidPositive,
 dhd.Temperature, dhd.DateTaken
