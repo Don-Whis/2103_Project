@@ -1,4 +1,7 @@
--- THE FIRST FEW QUERIES ARE FOR PORTING DATA OVER TO NOSQL
+-- This is used to port the data from SQL to NOSQL to be used (MODULAR)
+
+
+
 -- Query for all the students with their covid status, vaccination status and daily temperature
 -- This is conversted to student.csv from relational database
 SELECT 

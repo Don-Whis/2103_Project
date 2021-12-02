@@ -1,3 +1,5 @@
+-- This is all the queries for SQL implementation
+
 -- Retrieving Students currently studying in SIT with that are Covid Positive
 -- BUTTON in UI: Student with COVID
 SELECT student.Student_ID, student.Student_Name
