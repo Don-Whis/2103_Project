@@ -38,18 +38,13 @@ FROM 2103_tabledata.student s, 2103_tabledata.lesson l,  2103_tabledata.attend a
 2103_tabledata.module m, 2103_tabledata.contain c,
 2103_tabledata.classroom cl, 2103_tabledata.take_place tp,
 2103_tabledata.building bd, 2103_tabledata.belongs_to bt
-
 WHERE s.Student_ID = a.Student_ID
 AND l.Lesson_ID = a.Lesson_ID
-
 AND p.Professor_ID = t.Professor_ID
 AND l.Lesson_ID = t.Lesson_ID
-
 AND c.module_ID = m.module_ID
 AND l.Lesson_ID = c.Lesson_ID
-
 AND cl.Classroom_ID = tp.Classroom_ID
 AND l.Lesson_ID = tp.Lesson_ID
-
 AND bd.Building_ID = bt.Building_ID
 AND bt.Classroom_ID = cl.Classroom_ID;
