@@ -80,3 +80,17 @@ IN(
 				WHERE healthstatus.CovidPositive=1)
 					)
 				);
+
+-- Count the total number of students with covid 
+SELECT count(student.Student_ID) As StudentsWithCovid
+FROM student
+INNER JOIN student_has ON student.Student_ID = student_has.Student_ID
+INNER JOIN healthstatus ON student_has.HealthStatus_ID = healthstatus.HealthStatus_ID
+WHERE healthstatus.CovidPositive = 1;
+
+-- Count the total number of professors with covid
+SELECT count(professor.Professor_ID) As ProfessorsWithCovid
+FROM professor
+INNER JOIN professor_has ON professor.Professor_ID = professor_has.Professor_ID
+INNER JOIN healthstatus ON professor_has.HealthStatus_ID = healthstatus.HealthStatus_ID
+WHERE healthstatus.CovidPositive = 1;
