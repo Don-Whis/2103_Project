@@ -1,2 +1,7 @@
--- This is all the queries for SQL implementation
+-- This is all the queries for NoSQL implementation
 
+Find students or professors who are covid positive
+{ CovidPositive : { $eq : '1' } }
+
+Find all student with temperature higher than 37.5
+{ Temperature : { $gt : '37.5' } }
