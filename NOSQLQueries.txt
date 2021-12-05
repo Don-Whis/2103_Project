@@ -26,10 +26,10 @@ The number of students or professor who are vaccinated
 
 db.modulescheduleinfo.find( )
 Search for students/professor that have attended a particular module
-Module_ID : '1002' , 
-Student_ID: 1, Student_Name: 1, Professor_ID: 1, Professor_Name: 1, Module_Name: 1
+{Module_ID : '1002' ,} 
+{Student_ID: 1, Student_Name: 1, Professor_ID: 1, Professor_Name: 1, Module_Name: 1}
 
 db.modulescheduleinfo.find( )
 Search for all lessons on a particular date
-LessonDate: '2021-01-12' ,
-Student_ID: 1, Student_Name: 1, Professor_ID: 1, Professor_Name: 1, Module_Name: 1
+{LessonDate: '2021-01-12' ,}
+{Student_ID: 1, Student_Name: 1, Professor_ID: 1, Professor_Name: 1, Module_Name: 1}
